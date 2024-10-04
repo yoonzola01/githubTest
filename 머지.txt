@@ -1,0 +1,5 @@
+for f in *.mp4; do ffmpeg -i "$f" -i "${f%.*}.m4a" -c copy "merge/${f%.*}-merged.mp4"; done
+
+[따배쿠] 10. Kubernetes ConfigMap.f137.mp4
+[따배쿠] 10. Kubernetes ConfigMap.f140.m4a
+ffmpeg -i "10. Kubernetes ConfigMap.f137.mp4" -i "10. Kubernetes ConfigMap.f140.m4a" -c:v copy -c:a copy "10. Kubernetes ConfigMap.mp4"
